@@ -654,16 +654,17 @@ footer {
   background: var(--surface);
   color: var(--fg);
   padding: 10px 20px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-pill);
   font-size: var(--text-sm);
-  font-weight: 510;
-  font-feature-settings: "cv01", "ss03";
+  font-weight: 500;
+  z-index: 9999;
+  white-space: normal;
+  max-width: 90vw;
+  word-break: keep-all;
+  box-shadow: var(--elev-md);
   opacity: 0;
-  transition: all var(--motion-base) var(--ease-standard);
-  z-index: 200;
   pointer-events: none;
-  border: 1px solid var(--border);
-  white-space: nowrap;
+  transition: opacity var(--motion-base) var(--ease-standard), transform var(--motion-base) var(--ease-standard);
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 

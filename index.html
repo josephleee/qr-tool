@@ -690,8 +690,12 @@ footer {
 @media (max-width: 480px) {
   .nav-links { gap: 0; }
   .nav-links a { padding: 6px 8px; font-size: var(--text-xs); }
-  .btn { width: 100%; justify-content: center; }
+  .btn { width: 100%; justify-content: center; white-space: nowrap; }
+  .btn span { white-space: nowrap; }
   .btn-group { flex-direction: column; }
+  .size-options { flex-wrap: nowrap; }
+  .size-btn { padding: 6px 10px; font-size: var(--text-xs); flex: 0 1 auto; }
+  .preset-info { white-space: normal; word-break: keep-all; overflow-wrap: break-word; max-width: 100%; }
   .color-row { flex-direction: column; align-items: flex-start; }
   .hero-actions { flex-direction: column; align-items: stretch; }
 }

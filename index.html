@@ -13,28 +13,29 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-DSGL4BJH4R');
 </script>
+    <meta name="naver-site-verification" content="ff09480b3e0b2be418b6f8947600d8490f63b27a" content="430694a9f5c1ccaf27b8336cd7f7cc688922a729" />
 <style>
-/* ─── Linear Design System (open-design/nexu-io) ─────────────────── */
+/* ─── Light Design System ─────────────────────────────────────────── */
 :root {
-  --bg:           #08090a;
-  --surface:      #191a1b;
-  --surface-warm: var(--surface);
+  --bg:           #f8fafc;
+  --surface:      #ffffff;
+  --surface-warm: #f1f5f9;
 
-  --fg:   #f7f8f8;
-  --fg-2: #d0d6e0;
-  --muted: #8a8f98;
-  --meta:  #62666d;
+  --fg:   #1e293b;
+  --fg-2: #334155;
+  --muted: #64748b;
+  --meta:  #94a3b8;
 
-  --border:      rgba(255, 255, 255, 0.08);
-  --border-soft: rgba(255, 255, 255, 0.05);
+  --border:      rgba(0, 0, 0, 0.08);
+  --border-soft: rgba(0, 0, 0, 0.05);
 
   --accent:        #5e6ad2;
   --accent-on:     #ffffff;
-  --accent-hover:  #828fff;
-  --accent-active: #4752c4;
+  --accent-hover:  #4752c4;
+  --accent-active: #3b44a8;
 
-  --success: #27a644;
-  --warn:    #eab308;
+  --success: #16a34a;
+  --warn:    #ca8a04;
   --danger:  #dc2626;
 
   --font-display: "Inter Variable", "Inter", "SF Pro Display", -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
@@ -74,12 +75,12 @@ gtag('config', 'G-DSGL4BJH4R');
   --elev-flat:   none;
   --elev-ring:   0 0 0 1px var(--border);
   --elev-raised:
-    rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    0 0 0 1px rgba(255, 255, 255, 0.05);
+    rgba(0, 0, 0, 0.08) 0px 2px 8px,
+    0 0 0 1px rgba(0, 0, 0, 0.05);
 
   --focus-ring:
     0 0 0 2px color-mix(in oklab, var(--accent), transparent 30%),
-    0 4px 12px rgba(0, 0, 0, 0.1);
+    0 4px 12px rgba(0, 0, 0, 0.08);
 
   --motion-fast:   150ms;
   --motion-base:   200ms;
@@ -232,7 +233,7 @@ nav {
   font-feature-settings: "cv01", "ss03";
   transition: background-color var(--motion-fast) var(--ease-standard), color var(--motion-fast) var(--ease-standard);
 }
-.nav-links a:hover, .nav-links a.active { color: var(--fg); background: rgba(255,255,255,0.05); }
+.nav-links a:hover, .nav-links a.active { color: var(--fg); background: rgba(0,0,0,0.05); }
 
 /* ─── Buttons ────────────────────────────────────────────────────── */
 .btn {
@@ -263,11 +264,11 @@ nav {
 .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
 .btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
 .btn-ghost {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.02);
   color: var(--fg-2);
-  border-color: rgb(36, 40, 44);
+  border-color: #e2e8f0;
 }
-.btn-ghost:hover { background: rgba(255, 255, 255, 0.05); color: var(--fg); }
+.btn-ghost:hover { background: rgba(0, 0, 0, 0.05); color: var(--fg); }
 .btn-sm {
   padding: 6px 12px;
   font-size: var(--text-xs);
@@ -281,10 +282,11 @@ nav {
 
 /* ─── Cards ──────────────────────────────────────────────────────── */
 .card {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: var(--space-6);
+  box-shadow: var(--elev-raised);
   transition: background-color var(--motion-base) var(--ease-standard);
 }
 
@@ -297,7 +299,7 @@ nav {
   font-feature-settings: "cv01", "ss03";
 }
 .field textarea, .field input[type="text"], .field input[type="url"], .field select {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--surface-warm);
   color: var(--fg-2);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
@@ -323,7 +325,7 @@ nav {
   padding: 6px 16px;
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  background: rgba(255,255,255,0.02);
+  background: var(--surface-warm);
   cursor: pointer;
   font-family: var(--font-display);
   font-size: var(--text-sm);
@@ -333,7 +335,7 @@ nav {
   transition: all var(--motion-fast) var(--ease-standard);
   line-height: 1;
 }
-.size-btn:hover { border-color: var(--accent); color: var(--fg); background: rgba(94,106,210,0.08); }
+.size-btn:hover { border-color: var(--accent); color: var(--fg); background: rgba(94,106,210,0.1); }
 .size-btn.active { background: var(--accent); color: var(--accent-on); border-color: var(--accent); }
 
 /* ─── Color Picker ───────────────────────────────────────────────── */

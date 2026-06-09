@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://qr-tool-76v.pages.dev/sitemap.xml
+Sitemap: https://qr.nonparadigm.com/sitemap.xml
